@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.GitaController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a9d5ff" height="50.0" layoutX="198.0" layoutY="34.0" stroke="BLACK" strokeType="INSIDE" width="183.0" />
+      <Label layoutX="272.0" layoutY="45.0" text="Gite">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabella1" layoutX="84.0" layoutY="113.0" prefHeight="227.0" prefWidth="418.0">
+        <columns>
+          <TableColumn fx:id="destinazioneGite" prefWidth="134.4000244140625" text="Destinazione" />
+          <TableColumn fx:id="costo" prefWidth="89.5999755859375" text="Costo" />
+            <TableColumn fx:id="numeroOre" prefWidth="116.0" text="Numero di Ore" />
+            <TableColumn fx:id="descrizione" prefWidth="75.0" text="Descrizione" />
+        </columns>
+      </TableView>
+      <Button fx:id="avanti_button" layoutX="268.0" layoutY="350.0" mnemonicParsing="false" onAction="#passaAlloggio" text="Avanti" />
+   </children>
+</Pane>

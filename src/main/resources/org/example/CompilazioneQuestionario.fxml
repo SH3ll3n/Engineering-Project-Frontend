@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.CompilazioneQuestionarioController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b0d9ff" height="38.0" layoutX="277.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="238.0" />
+      <Label layoutX="281.0" layoutY="26.0" text="Compilazione Questionario">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="246.0" text="Dai un voto complessivo alla vacanza:" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Slider fx:id="vacanza_slider" blockIncrement="1.0" layoutX="56.0" layoutY="296.0" max="10.0" />
+      <Label layoutX="57.0" layoutY="279.0" text="0" />
+      <Label layoutX="179.0" layoutY="279.0" text="10" />
+      <Label layoutX="120.0" layoutY="279.0" text="5" />
+      <Label layoutX="55.0" layoutY="342.0" text="Aggiungi commento:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="commento_text" layoutX="60.0" layoutY="375.0" prefHeight="91.0" prefWidth="248.0" />
+      <Label layoutX="594.0" layoutY="439.0" text="(*)=opzionale" />
+      <Label layoutX="189.0" layoutY="342.0" text="*">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="indietro_button" layoutX="248.0" layoutY="491.0" mnemonicParsing="false" onAction="#tornaProfilo" text="Indietro" />
+      <Button fx:id="conferma_button" layoutX="396.0" layoutY="491.0" mnemonicParsing="false" onAction="#vaiTabellaFinale" text="Conferma" />
+      <Label layoutX="67.0" layoutY="76.0" text="Quanto ti è piaciuto l'alloggio?">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Slider fx:id="alloggio_slider" blockIncrement="1.0" layoutX="67.0" layoutY="116.0" max="10.0" />
+      <Label layoutX="424.0" layoutY="77.0" text="Quanto ti è piaciuta la città?">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Slider fx:id="citta_slider" blockIncrement="1.0" layoutX="424.0" layoutY="116.0" max="10.0" />
+      <Label layoutX="67.0" layoutY="158.0" text="Quanto ti è piaciuta la lingua studiata?">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="430.0" layoutY="158.0" text="Quanto consiglieresti questa vacanza?">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Slider fx:id="lingua_slider" blockIncrement="1.0" layoutX="67.0" layoutY="194.0" max="10.0" />
+      <Slider fx:id="consiglio_slider" blockIncrement="1.0" layoutX="430.0" layoutY="194.0" max="10.0" />
+      <Label layoutX="67.0" layoutY="177.0" text="0" />
+      <Label layoutX="70.0" layoutY="96.0" text="0" />
+      <Label layoutX="134.0" layoutY="96.0" text="5" />
+      <Label layoutX="130.0" layoutY="177.0" text="5" />
+      <Label layoutX="491.0" layoutY="97.0" text="5" />
+      <Label layoutX="494.0" layoutY="177.0" text="5" />
+      <Label layoutX="427.0" layoutY="97.0" text="0" />
+      <Label layoutX="430.0" layoutY="177.0" text="0" />
+      <Label layoutX="188.0" layoutY="96.0" text="10" />
+      <Label layoutX="190.0" layoutY="177.0" text="10" />
+      <Label layoutX="539.0" layoutY="97.0" text="10" />
+      <Label layoutX="545.0" layoutY="177.0" text="10" />
+      <Label layoutX="42.0" layoutY="23.0" text="Vacanza in:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nomeVacanza_label" layoutX="42.0" layoutY="49.0" prefHeight="20.0" prefWidth="217.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="tab_button" layoutX="552.0" layoutY="491.0" mnemonicParsing="false" onAction="#vai" text="Tabella Questionari" visible="false" />
+      <Label fx:id="striscia" layoutX="413.0" layoutY="258.0" prefHeight="91.0" prefWidth="217.0" text="Tutti questionari compilati, cliccare tabella questionari!" textFill="RED" visible="false" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

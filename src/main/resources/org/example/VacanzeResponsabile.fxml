@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.VacanzaResponsabileController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b2daff" height="206.0" layoutX="426.0" layoutY="148.0" stroke="BLACK" strokeType="INSIDE" width="260.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bddfff" height="35.0" layoutX="264.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" width="197.0" />
+      <Label layoutX="273.0" layoutY="36.0" prefHeight="27.0" prefWidth="179.0" text="Inserimento vacanze">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Accordion layoutX="346.0" layoutY="209.0" />
+      <Accordion layoutX="228.0" layoutY="199.0" />
+      <Button fx:id="indietro_button" layoutX="325.0" layoutY="405.0" mnemonicParsing="false" onAction="#tornaLista" text="Indietro" />
+      <Button fx:id="aggiungi_button" layoutX="318.0" layoutY="99.0" mnemonicParsing="false" onAction="#vaiInserimentoGita" text="Aggiungi Gita" />
+      <TableView fx:id="tabella1" layoutX="26.0" layoutY="135.0" prefHeight="237.0" prefWidth="379.0">
+         <columns>
+            <TableColumn fx:id="destinazioneGite" prefWidth="102.40002822875977" text="Destinazione" />
+            <TableColumn fx:id="costo" prefWidth="65.5999755859375" text="Costo" />
+            <TableColumn fx:id="numeroOre" prefWidth="111.19993591308594" text="Numero di Ore" />
+            <TableColumn fx:id="descrizione" prefWidth="98.20001220703125" text="Descrizione" />
+         </columns>
+      </TableView>
+      <Label layoutX="516.0" layoutY="164.0" text="Dati vacanza">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="432.0" layoutY="200.0" text="Data di Partenza:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="432.0" layoutY="229.0" text="Durata:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="432.0" layoutY="261.0" text="Destinazione:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="292.0" text="Lingua Studiata:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="durata" layoutX="484.0" layoutY="228.0" />
+      <DatePicker fx:id="dataPartenza" editable="false" layoutX="547.0" layoutY="197.0" prefHeight="25.0" prefWidth="134.0" />
+      <TextField fx:id="destinazione" layoutX="524.0" layoutY="258.0" />
+      <TextField fx:id="linguaStudiata" layoutX="539.0" layoutY="289.0" prefHeight="25.0" prefWidth="134.0" />
+      <Button fx:id="conferma_button" layoutX="461.0" layoutY="405.0" mnemonicParsing="false" onAction="#confermaAction" text="Conferma" />
+      <Label fx:id="errore" layoutX="35.0" layoutY="91.0" text="Mancato inserimento di tutti i dati" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
