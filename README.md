@@ -1,4 +1,4 @@
-# Engineering_Project_Frontend
+# Engineering Project Frontend
 
 # What is it
 Engineering_Project_Frontend is an educational project in university
