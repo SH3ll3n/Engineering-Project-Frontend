@@ -10,4 +10,4 @@ For installation you need to use an integrated development environment for the J
 programming language (for example IntelliJ IDEA). We use JavaFX platform. 
 
 # How to use
-To use, you simply run the code on your laptop.
+To use you simply run the code on your laptop.
