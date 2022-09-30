@@ -1,8 +1,8 @@
 # Frontend Engineering Project
 
 # What is it
-Frontend Engineering Project is an educational project in university
-to design an IT system to manage the study holiday organization service
+Frontend Engineering Project is an educational university project
+to design a computer system to manage the study holiday organization service
 for guys. This is the UI interface.
 
 # How to install
