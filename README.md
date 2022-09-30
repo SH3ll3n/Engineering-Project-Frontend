@@ -1,7 +1,7 @@
-# frontend engineering project
+# Frontend Engineering Project
 
 # What is it
-Engineering_Project_Frontend is an educational project in university
+Frontend Engineering Project is an educational project in university
 to design an IT system to manage the study holiday organization service
 for guys. This is the UI interface.
 
